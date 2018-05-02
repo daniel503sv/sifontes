@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <style>
+        <style type="text/css" media="all">
             html, body {
                 background-color: #fff;
                 color: #636b6f;
