@@ -1,4 +1,8 @@
-vendor/
+vendor/*
+!vendor/voyager
+vendor/voyager/*
+!vendor/voyager/prestamos
+
 node_modules/
 npm-debug.log
 
