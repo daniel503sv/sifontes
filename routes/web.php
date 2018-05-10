@@ -18,6 +18,8 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
-
-    Route::get('pdf','ReportController@show');
+    Route::group(['middleware' => 'admin.user'], function (){
+        Route::get('pdf','ReportController@index');
+        Route::get('download','ReportController@show');
+    });
 });
