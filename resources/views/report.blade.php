@@ -26,6 +26,7 @@
             }
             .answer{
                 text-decoration-line: underline;
+                padding: 20px;
             }
             td{
                 border: 1px solid;
@@ -39,21 +40,21 @@
                 <td colspan="8" class="header">
                     <div>
                         <label>NOMBRE DE LA INSTITUCION EDUCATIVA </label>
-                        <label class="answer">{{ "HOLA" }}</label>
+                        <label class="answer">{{ setting('site.school_name') }}</label>
                     </div>
                     <div>
                         <label>NOMBRE CAVERT </label>
-                        <label class="answer">{{ "HOLA" }}</label>
+                        <label class="answer">{{ setting('site.ca-ert') }}</label>
                         <label>CÓDIGO INFRAESTRUCTURA </label>
-                        <label class="answer">{{ "HOLA" }}</label>
+                        <label class="answer">{{ setting('site.school_code') }}</label>
                     </div>
                     <div>
                         <label>MUNICIPIO </label>
-                        <label class="answer">{{ "HOLA" }}</label>
+                        <label class="answer">{{ setting('site.municipio') }}</label>
                         <label>DEPARTAMENTO </label>
-                        <label class="answer">{{ "HOLA" }}</label>
+                        <label class="answer">{{ setting('site.departament') }}</label>
                         <label>DISTRITO EDUCATIVO N° </label>
-                        <label class="answer">{{ "HOLA" }}</label>
+                        <label class="answer">{{ setting('site.distrito') }}</label>
                     </div>
                 </td>
             </tr>
@@ -74,10 +75,10 @@
                     <td>{{$info['date']}}</td>
                     <td>{{$info['start_time']}}</td>
                     <td>{{$info['end_time']}}</td>
-                    <td>Lempita</td>
+                    <td>{{$info['resource']}}</td>
                     <td>{{$info['resource_id']}}</td>
-                    <td>septimo</td>
-                    <td>a</td>
+                    <td>{{$info['grade']}}</td>
+                    <td>{{$info['section']}}</td>
                 </tr>
             @endforeach
         <table>
